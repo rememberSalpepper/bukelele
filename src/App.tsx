@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
+import ViteLogo from '../public/vite.svg'; 
+
 
 export default function BukeleleLanding() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -147,7 +149,7 @@ export default function BukeleleLanding() {
               transition={{ repeat: Infinity, duration: 2 }}
               className="text-9xl mb-4 inline-block"
             >
-              🌋
+              <img src="/vite.svg" alt="Vite Logo" style={{ width: '18.125rem', height: '18.125rem' }} className="mx-auto rounded-full border-4 border-yellow-500" />
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: -50 }}
@@ -155,7 +157,7 @@ export default function BukeleleLanding() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-6xl md:text-8xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-red-600 dark:from-yellow-300 dark:to-red-400"
             >
-              $BUKELELE COIN
+              $BUKELELE
             </motion.h1>
             <AnimatePresence mode="wait">
               <motion.p
